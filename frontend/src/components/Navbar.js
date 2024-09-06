@@ -3,7 +3,7 @@ import React from "react";
 import Profile from "./Profile";
 function Navbar() {
   return (
-    <div className="container mt-2">
+    <div className="container-fuild m-3">
       <div className="row">
         <div className="col-4">
           <h1 className="fs-3 m-3 d-flex justify-content-start align-items-center">
