@@ -10,6 +10,7 @@ import NotFound from './components/NotFound';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Anxiety from './components/blogs/Anxiety';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,10 @@ root.render(
     <Route path='*' element={<NotFound/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
     <Route path='/blog' element={<Blog/>}/>
+    <Route path='/anxiety' element={<Anxiety/>}/>
+    <Route path='/blog' element={<Blog/>}/>
+    <Route path='/blog' element={<Blog/>}/>
+
   </Routes>
   < Footer/>
   </BrowserRouter>

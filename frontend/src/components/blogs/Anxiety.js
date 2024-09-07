@@ -4,17 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const anxiety1 =
 {
   title: "What is Anxiety?",
-  image: "./media/freepik.png",
+  image: "../media/freepik.png",
   link: "/topics/managing-anxiety"
 }
 const anxiety2 = {
   title: "What are the Symptoms of Anxiety?",
-  image: "./media/4283206.png",
+  image: "../media/4283206.png",
   link: "/topics/managing-anxiety"
 }
 const anxiety3 = {
   title: "How to Manage Anxiety?",
-  image: "./media/unhappy-teenager-guy.jpg",
+  image: "../media/unhappy-teenager-guy.jpg",
   link: "/topics/managing-anxiety"
 }
 function Anxiety() {
@@ -43,7 +43,7 @@ function Anxiety() {
             src={anxiety1.image}
             className="img-fluid rounded"
             alt={anxiety1.title}
-            style={{ maxHeight: '400px', objectFit: 'cover' }}
+            style={{ maxHeight: '100%', objectFit: 'cover' }}
 
           />
         </div>
