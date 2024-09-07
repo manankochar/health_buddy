@@ -6,8 +6,8 @@ import Sleep from './Sleep'
 
 function Blog() {
   return (
-    // <Anxiety/>
-    <Sleep/>
+    <Anxiety/>
+    // <Sleep/>
 
   )
 }
