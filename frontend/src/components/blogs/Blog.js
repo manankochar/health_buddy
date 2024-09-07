@@ -1,8 +1,10 @@
 import React from 'react'
+import Anxiety from './Anxiety'
+
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <Anxiety/>
   )
 }
 
