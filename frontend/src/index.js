@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Anxiety from './components/blogs/Anxiety';
+import Sleep from './components/blogs/Sleep';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,7 +24,7 @@ root.render(
     <Route path='/quiz' element={<Quiz/>}/>
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/anxiety' element={<Anxiety/>}/>
-    <Route path='/blog' element={<Blog/>}/>
+    <Route path='/sleep' element={<Sleep/>}/>
     <Route path='/blog' element={<Blog/>}/>
 
   </Routes>

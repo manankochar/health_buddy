@@ -11,26 +11,25 @@ function Blog() {
       <h1 className='text-center text-muted mb-5'>Our Top Blogs</h1>
       <div className='d-flex gap-5 justify-content-between my-5'>
       <MediaCard
-      image='.media/med.png'
-      title='yo'
+      image='../media/6437.jpg'
+      title='5 Ways to Manage Anxiety & Depression'
       link='/anxiety'
-      content='dihi'
+      content='Discover effective techniques to reduce anxiety and improve mental well-being.'
       />
       <MediaCard
-      image='.media/med.png'
-      title='yoIKJHI'
+      image='../media/6437.jpg'
+      title='5 Ways to Manage Anxiety & Depression'
       link='/anxiety'
-      content='dihi'
+      content='Discover effective techniques to reduce anxiety and improve mental well-being.'
       />
       
       <MediaCard
-      image='.media/med.png'
-      title='yo'
-      link='/blog/anxiety'
-      content='dihi'
+      image='../media/6437.jpg'
+      title='5 Ways to Manage Anxiety & Depression'
+      link='/anxiety'
+      content='Discover effective techniques to reduce anxiety and improve mental well-being.'
       />
-      </div>
-
+        </div>
       <div className='d-flex gap-5 justify-content-between my-5'>
       <MediaCard
       image='.media/med.png'
