@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from './components/home/HomePage';
 import Quiz from './components/quiz/Quiz';
 
+import NotFound from './components/NotFound';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -15,7 +17,7 @@ root.render(
   < Navbar/>
   <Routes>
     <Route path='/' element={<HomePage/>}/>
-    {/* <Route path='*' element={<NotFound/>}/> */}
+    <Route path='*' element={<NotFound/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
   </Routes>
   < Footer/>
