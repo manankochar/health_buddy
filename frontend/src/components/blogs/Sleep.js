@@ -19,11 +19,11 @@ const sleep3 = {
 
 function Sleep() {
     return (
-        <div class="container">
-            <h1 class="text-center section-heading text-muted">Sleep</h1>
+        <div class="container my-5">
+            <h1 class="text-center section-heading text-muted">Importance of Sleep for Mental Health</h1>
 
 
-            <div class="row content-section">
+            <div class="row content-section p-5">
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
                         <h3>Sleep and Mental Health</h3>
@@ -81,7 +81,7 @@ function Sleep() {
             </div>
 
 
-            <div class="row content-section">
+            <div class="row content-section my-5">
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
                         <h3>Physical health benefits</h3>

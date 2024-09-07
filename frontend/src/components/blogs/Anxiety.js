@@ -19,11 +19,11 @@ const anxiety3 = {
 }
 function Anxiety() {
   return (
-    <div class="container">
-      <h1 class="text-center section-heading text-muted">Anxiety</h1>
+    <div class="container my-5 p-5">
+      <h1 class="text-center section-heading text-muted">5 Ways to Manage Anxiety & Depression</h1>
 
 
-      <div class="row content-section">
+      <div class="row content-section mt-5 p-5">
         <div class="col-md-6 d-flex align-items-center">
           <div>
             <h3>What is Anxiety Disorder?</h3>
@@ -96,15 +96,14 @@ function Anxiety() {
                 </li>
                 <li>Medication. Doctors prescribe antianxiety and antidepressant drugs.</li>
                 <li>Complemental health techniques. Mindfulness, yoga, and self-management strategies such as stress management are ways to treat your anxiety using alternative methods.</li>
-                <li>Meeting with a therapist or psychologist can help you learn tools to use and strategies to cope with stress when it occurs.
-
-                </li>
+                <li>Meeting with a therapist or psychologist can help you learn tools to use and strategies to cope with stress when it occurs.</li>
+                <li>Cognitive Behavioral Therapy (CBT): This is one of the most effective treatments for anxiety and depression. It involves identifying and challenging negative thought patterns and behaviors, and replacing them with more positive ones.</li>
               </ul>
 
             </p>
           </div>
         </div>
-        <div class="col-md-6 image-container">
+        <div class="col-md-6 image-container mt-5 p-5">
           <img
             src={anxiety3.image}
             className="img-fluid rounded"
