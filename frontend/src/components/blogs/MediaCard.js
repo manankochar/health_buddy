@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
+
 export default function MediaCard({image,title,link,content}) {
   return (
     <Card sx={{ maxWidth: 345 }}>

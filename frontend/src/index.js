@@ -12,7 +12,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Anxiety from './components/blogs/Anxiety';
 import Sleep from './components/blogs/Sleep';
-
+import Depression from './components/blogs/depression';
+import Diet from './components/blogs/Diet';
+import Stigma from './components/blogs/stigma';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,8 +26,13 @@ root.render(
     <Route path='/quiz' element={<Quiz/>}/>
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/anxiety' element={<Anxiety/>}/>
+    <Route path='/depression' element={<Depression/>}/>
     <Route path='/sleep' element={<Sleep/>}/>
-    <Route path='/blog' element={<Blog/>}/>
+    <Route path='/Diet' element={<Diet/>}/>
+    <Route path='/stigma' element={<Stigma/>}/>
+
+   
+    
 
   </Routes>
   < Footer/>
