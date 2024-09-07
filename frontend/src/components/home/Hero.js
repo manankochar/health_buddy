@@ -14,7 +14,7 @@ function Hero() {
             <h1>HEALTH MATTERS</h1>
             <div className='d-flex justify-content-center mt-3'>
               <Button color="secondary" variant="text" size="large" className='mx-2' href='/quiz'>Take a quiz</Button>
-              <Button color="secondary" variant="text" size="large" className='mx-2'>Know more</Button>
+              <Button color="secondary" variant="text" size="large" className='mx-2' href='/blog'>Know more</Button>
             </div>
           </div>
         </div>
