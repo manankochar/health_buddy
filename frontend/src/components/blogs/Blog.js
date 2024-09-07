@@ -1,12 +1,17 @@
 import React from 'react'
 import Anxiety from './Anxiety'
 import Sleep from './Sleep'
+<<<<<<< Updated upstream
 import MediaCard from './MediaCard'
+=======
+import Depression from './depression'
+>>>>>>> Stashed changes
 
 
 
 function Blog() {
   return (
+<<<<<<< Updated upstream
     <div className='container my-5 p-5'>
       <h1 className='text-center text-muted mb-5'>Our Top Blogs</h1>
       <div className='d-flex gap-5 justify-content-between my-5'>
@@ -51,6 +56,11 @@ function Blog() {
       content='dihi'
       />
       </div>
+=======
+    // <Anxiety/>
+    // <Sleep/>
+    <Depression/>
+>>>>>>> Stashed changes
 
     </div>
   )
