@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 function Hero() {
   return (
     <div className="container">
-      <div className="row align-items-center" style={{ minHeight: "85vh" }}>
+      <div className="row align-items-center" style={{ minHeight: "75vh" }}>
         <div className="col-md-6 text-center">
           <img
             src="./media/1.png"
