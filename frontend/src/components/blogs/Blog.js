@@ -5,6 +5,7 @@ import Depression from './depression'
 import MediaCard from './MediaCard'
 import Diet from './Diet'
 import Stigma from './stigma'
+import Routine from './Routine'
 
 
 
@@ -42,7 +43,7 @@ function Blog() {
       <MediaCard
       image='../media/med.jpg'
       title='Mindfulness Practices to Incorporate into Your Daily Routine'
-      link='/anxiety'
+      link='/routine'
       content='Start practicing mindfulness with these simple daily habits.'
       />
       <MediaCard
