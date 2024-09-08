@@ -16,7 +16,6 @@ import Depression from './components/blogs/depression';
 import Diet from './components/blogs/Diet';
 import Stigma from './components/blogs/stigma';
 import SignUpPage from './components/SignUp/Signup';
-import Routine from './components/blogs/Routine';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,10 +33,10 @@ root.render(
     <Route path='/stigma' element={<Stigma/>}/>
 
     <Route path='/signup' element={<SignUpPage/>}/>
-
+=======
     <Route path='/Routine' element={<Routine/>}/>
     
-
+>>>>>>> Stashed changes
 
    
     
