@@ -93,7 +93,7 @@ const Quiz = () => {
               ))}
             </div>
             {
-              activeStep ===3 && ( <button className='btn w-100  mt-4 btn-outline-primary' type='submit'>Submit </button>)
+              activeStep ===3 && ( <button className='btn w-100  mt-4 btn-success' type='submit'>Submit </button>)
             }
            
           </div>

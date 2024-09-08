@@ -67,8 +67,8 @@ function Hero() {
         </div>
       </div>
       <div
-        className="text-muted text-center fs-4"
-        style={{ marginTop: "-40px", paddingBottom: "20px" }}
+        className="text-muted text-center fs-5"
+        style={{ marginTop: "-30px", paddingBottom: "20px" }}
       >
         <span>
           Your mental health is a priority. Your happiness is essential. Your
