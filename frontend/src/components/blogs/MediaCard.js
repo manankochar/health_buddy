@@ -6,11 +6,20 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-
-
-export default function MediaCard({image,title,link,content}) {
+export default function MediaCard({ image, title, link, content }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card 
+      sx={{ 
+        maxWidth: 345, 
+        transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+        cursor: 'pointer',
+        '&:hover': {
+          transform: 'scale(1.05)',
+          boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)',
+          zIndex: 10,    
+        }
+      }}
+    >
       <CardMedia
         sx={{ height: 140 }}
         image={image}
@@ -20,7 +29,7 @@ export default function MediaCard({image,title,link,content}) {
           {title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-         {content}
+          {content}
         </Typography>
       </CardContent>
       <CardActions>

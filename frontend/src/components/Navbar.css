@@ -1,0 +1,9 @@
+.nav-hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-hover:hover {
+    color: #9370DB;
+    transform: scale(1.1);
+  }
+  

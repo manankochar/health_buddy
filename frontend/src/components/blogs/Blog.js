@@ -42,7 +42,7 @@ function Blog() {
       <MediaCard
       image='../media/med.jpg'
       title='Mindfulness Practices to Incorporate into Your Daily Routine'
-      link='/blog/anxiety'
+      link='/anxiety'
       content='Start practicing mindfulness with these simple daily habits.'
       />
       <MediaCard
@@ -59,11 +59,6 @@ function Blog() {
       content='A healthy, well-balanced diet can help us think clearly and feel more alert'
       />
       </div>
-     <Anxiety/>
-     <Sleep/>
-     <Depression/>
-     <Diet/>
-     <Stigma/>
 
     
     </div>

@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Profile from "./Profile";
+import './Navbar.css'; // Import the CSS file
+
 function Navbar() {
   return (
-    <div className="container-fuild m-3">
+    <div className="container-fluid m-3">
       <div className="row">
         <div className="col-4">
           <h1 className="fs-3 m-3 d-flex justify-content-start align-items-center">
@@ -18,22 +20,31 @@ function Navbar() {
                 id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link me-5" aria-current="page" href="/">
+                    <a
+                      className="nav-link me-5 nav-hover"
+                      aria-current="page"
+                      href="/">
                       Home
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link me-5" href="/blog">
+                    <a
+                      className="nav-link me-5 nav-hover"
+                      href="/blog">
                       Blogs
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link me-5" href="#">
+                    <a
+                      className="nav-link me-5 nav-hover"
+                      href="#">
                       Products
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a
+                      className="nav-link nav-hover"
+                      href="#">
                       Contact
                     </a>
                   </li>
@@ -42,15 +53,12 @@ function Navbar() {
             </div>
           </nav>
         </div>
-        <div className="col-4 d-flex justify-content-end align-items-center">
-        <span>Hi User!</span>
-          {/* <button type="button" className="btn btn-dark">AI Bot</button> */}
+        <div className="col-4 d-flex justify-content-end align-items-center px-4">
+          <span>Hi User!</span>
           <Profile />
-          
         </div>
       </div>
-      </div>
-    
+    </div>
   );
 }
 
