@@ -32,7 +32,8 @@ router.post("/signup", async (req, res) => {
 
         const result = await user.save();
 
-      
+        
+        // Return user data and token
         return res.status(201).json({
             user: {
                 id: result._id,
@@ -41,7 +42,7 @@ router.post("/signup", async (req, res) => {
                 phone: result.phone,
                 age: result.age,
             },
-         
+            token
         });
     } catch (error) {
         console.error("Signup Error:", error.message);

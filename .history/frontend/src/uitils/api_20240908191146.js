@@ -8,7 +8,7 @@ export const signdata = async (url, formData) => {
               'Content-Type': 'application/json',
           },
       });
-   
+      console.log(response)
       return response.data; // Return the successful response data
 
   } catch (error) {

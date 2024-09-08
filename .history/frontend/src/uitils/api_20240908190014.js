@@ -3,12 +3,12 @@ import axios from 'axios';
 export const signdata = async (url, formData) => {
   try {
     console.log(url,formData)
-      const response = await axios.post(`http://localhost:4000/api/user${url}`, formData, {
+      const response = await axios.post(`http://localhost:8080/api/user${url}`, formData, {
           headers: {
               'Content-Type': 'application/json',
           },
       });
-   
+      console.log()
       return response.data; // Return the successful response data
 
   } catch (error) {

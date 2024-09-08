@@ -81,7 +81,12 @@ function SignUpPage() {
               console.log(data)
     
               localStorage.setItem("user",JSON.stringify(User));
-             setIsLoding(false)
+             
+    
+              setTimeout(() => {
+               window.location.href = "/"
+              }, 1000);
+
               setFormFields({
                 name: "",
                 phone: "",

@@ -41,7 +41,7 @@ router.post("/signup", async (req, res) => {
                 phone: result.phone,
                 age: result.age,
             },
-         
+            token
         });
     } catch (error) {
         console.error("Signup Error:", error.message);

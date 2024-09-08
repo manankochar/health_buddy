@@ -81,7 +81,7 @@ function SignUpPage() {
               console.log(data)
     
               localStorage.setItem("user",JSON.stringify(User));
-             setIsLoding(false)
+             setIsLoding(f)
               setFormFields({
                 name: "",
                 phone: "",

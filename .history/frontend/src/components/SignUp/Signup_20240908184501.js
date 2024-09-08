@@ -71,17 +71,22 @@ function SignUpPage() {
             const data = await signdata('/signup', formFields); // Using the modified signupUser function
      
 
-            if (data) {
+            if (data && data.token) {
               setIsLoding(true)
+              localStorage.setItem("token", data.token);
               const User = ({
                 name:data.user?.name,
-                email:data.user?.ema
+                email:data.user?.email,
+                userId:data.user.id
               })
-
-              console.log(data)
     
               localStorage.setItem("user",JSON.stringify(User));
-             setIsLoding(false)
+             
+    
+              setTimeout(() => {
+               window.location.href = "/"
+              }, 1000);
+
               setFormFields({
                 name: "",
                 phone: "",
