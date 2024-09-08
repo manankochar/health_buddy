@@ -23,16 +23,16 @@ const questionsData = [
 const Quiz = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [scroreDisplay,setScrorDisplay] = useState(false)
 
-  const handleOptionClick = (e,answer) => {
-    e.preventDefault();
+  const handleOptionClick = (answer) => {
     const newAnswers = [...answers];
     newAnswers[activeStep] = answer;
     setAnswers(newAnswers);
     if (activeStep < questionsData.length - 1) {
       setActiveStep(activeStep + 1);
-    } 
+    } else {
+      console.log('Quiz Completed');
+    }
   };
 
   const calculateScore = () => {
@@ -51,12 +51,8 @@ const Quiz = () => {
 
   const quizForm = (e) => {
     e.preventDefault();
-    setScrorDisplay(true)
-    console.log("Quiz COmpelete")
     console.log(answers)
-    console.log(calculateScore())
   }
-
   return (
     <div className="quiz-container my-5">
       <header className="quiz-header">
@@ -74,41 +70,34 @@ const Quiz = () => {
         </ul>
       </div>
 
-
-       {
-        scroreDisplay === false ?  (activeStep < questionsData.length && (
-          <form onSubmit={(e) => quizForm(e)}>
-          <div className="quiz-form">
-            <h2>{questionsData[activeStep].question}</h2>
-            <div className="options">
-              {questionsData[activeStep].options.map((option, index) => (
-                <button
-                  key={index}
-                  type="button" 
-                  className={`btn btn-outline-primary ${answers[activeStep] === option ? 'selected' : ''}`}
-                  onClick={(e) => handleOptionClick(e, option)}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-            {
-              activeStep ===3 && ( <button className='btn w-100  mt-4 btn-outline-primary' type='submit'>Submit </button>)
-            }
-           
+      {/* Quiz Form */}
+      {activeStep < questionsData.length ? (
+        <form onSubmit={quizForm}>
+        <div className="quiz-form">
+          <h2>{questionsData[activeStep].question}</h2>
+          <div className="options">
+            {questionsData[activeStep].options.map((option, index) => (
+              <button
+                key={index}
+                className={`btn btn-outline-primary ${answers[activeStep] === option ? 'selected' : ''}`}
+                onClick={() => handleOptionClick(option)}
+              >
+                {option}
+              </button>
+            ))}
           </div>
-          </form>
-        )  ) : (
-          <div className="quiz-result">
-            <h2>Your Score: {calculateScore()}</h2>
-            <p>
-              Interpretation: {calculateScore() < 4 ? 'Low Anxiety' : calculateScore() < 8 ? 'Moderate Anxiety' : 'High Anxiety'}
-            </p>
-          </div>
-        )
-       }
-
-     
+          
+          <button className='btn w-100  mt-4 btn-outline-primary' >Submit </button>
+        </div>
+        </form>
+      ) : (
+        <div className="quiz-result">
+          <h2>Your Score: {calculateScore()}</h2>
+          <p>
+            Interpretation: {calculateScore() < 4 ? 'Low Anxiety' : calculateScore() < 8 ? 'Moderate Anxiety' : 'High Anxiety'}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

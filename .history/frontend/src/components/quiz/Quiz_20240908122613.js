@@ -105,7 +105,7 @@ const Quiz = () => {
               Interpretation: {calculateScore() < 4 ? 'Low Anxiety' : calculateScore() < 8 ? 'Moderate Anxiety' : 'High Anxiety'}
             </p>
           </div>
-        )
+        ))
        }
 
      

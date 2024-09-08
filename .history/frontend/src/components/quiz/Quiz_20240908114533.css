@@ -24,9 +24,7 @@
     flex-direction: row !important;
 
   }
-  .progress-step::after{
-    display: none !important;
-  }
+  
   .progress-step {
     text-align: center;
     position: relative;
@@ -93,5 +91,4 @@
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
   

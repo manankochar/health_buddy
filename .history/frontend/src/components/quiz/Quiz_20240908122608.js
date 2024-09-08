@@ -98,14 +98,7 @@ const Quiz = () => {
            
           </div>
           </form>
-        )  ) : (
-          <div className="quiz-result">
-            <h2>Your Score: {calculateScore()}</h2>
-            <p>
-              Interpretation: {calculateScore() < 4 ? 'Low Anxiety' : calculateScore() < 8 ? 'Moderate Anxiety' : 'High Anxiety'}
-            </p>
-          </div>
-        )
+        )  ) : ()
        }
 
      

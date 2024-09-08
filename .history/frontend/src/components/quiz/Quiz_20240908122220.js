@@ -51,7 +51,6 @@ const Quiz = () => {
 
   const quizForm = (e) => {
     e.preventDefault();
-    setScrorDisplay(true)
     console.log("Quiz COmpelete")
     console.log(answers)
     console.log(calculateScore())
@@ -76,7 +75,7 @@ const Quiz = () => {
 
 
        {
-        scroreDisplay === false ?  (activeStep < questionsData.length && (
+        scroreDisplay === false ?  {activeStep < questionsData.length ? (
           <form onSubmit={(e) => quizForm(e)}>
           <div className="quiz-form">
             <h2>{questionsData[activeStep].question}</h2>
@@ -98,14 +97,14 @@ const Quiz = () => {
            
           </div>
           </form>
-        )  ) : (
+        ) : (
           <div className="quiz-result">
             <h2>Your Score: {calculateScore()}</h2>
             <p>
               Interpretation: {calculateScore() < 4 ? 'Low Anxiety' : calculateScore() < 8 ? 'Moderate Anxiety' : 'High Anxiety'}
             </p>
           </div>
-        )
+        )}
        }
 
      
