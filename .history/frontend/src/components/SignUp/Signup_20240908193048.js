@@ -75,8 +75,7 @@ function SignUpPage() {
               setIsLoding(true)
               const User = ({
                 name:data.user?.name,
-                email:data.user?.email
-                
+                email:data.user?.ema
               })
 
               console.log(data)

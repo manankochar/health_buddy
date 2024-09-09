@@ -76,7 +76,6 @@ function SignUpPage() {
               const User = ({
                 name:data.user?.name,
                 email:data.user?.email
-                
               })
 
               console.log(data)
