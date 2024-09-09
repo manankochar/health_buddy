@@ -14,7 +14,7 @@ function Spotlight() {
       className="container p-5 my-5"
       style={{
         transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
-        cursor: "",
+        cursor: "default",
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = "scale(1.05)";

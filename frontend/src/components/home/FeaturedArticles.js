@@ -34,7 +34,7 @@ function FeaturedArticles() {
                         <div className="card mb-4 shadow-sm"
                             style={{
                                 transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
-                                cursor: 'pointer'
+                                cursor: 'default'
                             }}
                             onMouseEnter={e => {
                                 e.currentTarget.style.transform = 'scale(1.05)';

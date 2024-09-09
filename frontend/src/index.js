@@ -3,9 +3,15 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import HomePage from './components/home/HomePage';
-import Quiz from './components/quiz/Quiz';
+
+import AnxietyQuiz from './components/quiz/AnxietyQuiz';
+import StressQuiz from './components/quiz/StressQuiz';
+import DepressionQuiz from './components/quiz/DepressionQuiz';
+
 import Blog from './components/blogs/Blog';
+
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import NotFound from './components/NotFound';
 
 import Navbar from './components/Navbar';
@@ -25,7 +31,9 @@ root.render(
   <Routes>
     <Route path='/' element={<HomePage/>}/>
     <Route path='*' element={<NotFound/>}/>
-    <Route path='/quiz' element={<Quiz/>}/>
+    <Route path='/anxietyquiz' element={<AnxietyQuiz/>}/>
+    <Route path='/stressquiz' element={<StressQuiz/>}/>
+    <Route path='/depressionquiz' element={<DepressionQuiz/>}/>
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/anxiety' element={<Anxiety/>}/>
     <Route path='/depression' element={<Depression/>}/>

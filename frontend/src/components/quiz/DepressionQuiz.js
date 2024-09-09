@@ -20,7 +20,7 @@ const questionsData = [
   },
 ];
 
-const Quiz = () => {
+const DepressionQuiz = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [scroreDisplay,setScrorDisplay] = useState(false)
@@ -60,7 +60,7 @@ const Quiz = () => {
   return (
     <div className="quiz-container my-5">
       <header className="quiz-header">
-        <h1>Anxiety Test</h1>
+        <h1>Depression Test</h1>
       </header>
 
       {/* Progress Bar */}
@@ -113,4 +113,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default DepressionQuiz;
