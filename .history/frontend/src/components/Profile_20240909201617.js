@@ -84,7 +84,7 @@ export default function Profile() {
           <MenuItem onClick={handleClose}>
             <Avatar /> My account
           </MenuItem>
-          <Divider />)
+          <Divider />
           
         }
         

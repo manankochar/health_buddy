@@ -9,7 +9,6 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Logout from '@mui/icons-material/Logout';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 
 export default function Profile() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,6 +20,7 @@ export default function Profile() {
     setAnchorEl(null);
   };
   const user = JSON.parse(localStorage.getItem("user"));
+  const name = user.name;
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
@@ -35,7 +35,8 @@ export default function Profile() {
             aria-expanded={open ? 'true' : undefined}
           >
             <Avatar sx={{ width: 32, height: 32 }}>{
-            user && user!==undefined ? user.name[0].toUpperCase() :<Person2OutlinedIcon />}</Avatar>
+            user 
+            name[0].toUpperCase()}</Avatar>
           </IconButton>
         </Tooltip>
       </Box>
@@ -76,26 +77,18 @@ export default function Profile() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        {
-          user && user!==undefined &&
-          (  <MenuItem onClick={handleClose}>
-            <Avatar /> Dashboard
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Avatar /> My account
-          </MenuItem>
-          <Divider />)
-          
-        }
-        
+        <MenuItem onClick={handleClose}>
+          <Avatar /> Dashboard
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Avatar /> My account
+        </MenuItem>
+        <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
-          {
-            user && user!==undefined ? ' Logout' : 'SignUp'
-          }
-         
+          Logout
         </MenuItem>
       </Menu>
     </React.Fragment>

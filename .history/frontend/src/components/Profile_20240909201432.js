@@ -76,24 +76,19 @@ export default function Profile() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        {
-          user && user!==undefined &&
-          (  <MenuItem onClick={handleClose}>
-            <Avatar /> Dashboard
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Avatar /> My account
-          </MenuItem>
-          <Divider />)
-          
-        }
-        
+        <MenuItem onClick={handleClose}>
+          <Avatar /> Dashboard
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Avatar /> My account
+        </MenuItem>
+        <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
           {
-            user && user!==undefined ? ' Logout' : 'SignUp'
+            user && user!==undefined ? ' Logout' :  />
           }
          
         </MenuItem>

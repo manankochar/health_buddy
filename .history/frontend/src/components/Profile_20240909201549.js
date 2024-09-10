@@ -78,16 +78,14 @@ export default function Profile() {
       >
         {
           user && user!==undefined &&
-          (  <MenuItem onClick={handleClose}>
-            <Avatar /> Dashboard
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Avatar /> My account
-          </MenuItem>
-          <Divider />)
-          
         }
-        
+        <MenuItem onClick={handleClose}>
+          <Avatar /> Dashboard
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Avatar /> My account
+        </MenuItem>
+        <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <Logout fontSize="small" />

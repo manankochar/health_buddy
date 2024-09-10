@@ -2,7 +2,7 @@
 import React, { useContext, useEffect } from "react";
 import { TextField } from "@mui/material";
 import Button from '@mui/material/Button';
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -13,7 +13,7 @@ import { MyContext } from "../../App";
 
 function SignUpPage() {
   const context = useContext(MyContext);
-  const navigate = useNavigate();
+
   const[isLoding,setIsLoding] = useState(false)
   const [formFields, setFormFields] = useState({
     name: "",
@@ -80,20 +80,16 @@ function SignUpPage() {
               context.setAlertBox({
                 error: false,
                 msg: "User SignUp sucessfully",
-                snackOpen: true,
+                snackOpen: false,
               });
               const User = ({
                 name:data.user?.name,
                 email:data.user?.email
               })
 
+    
               localStorage.setItem("user",JSON.stringify(User));
              setIsLoding(false)
-
-             setTimeout(() => {
-              navigate("/")
-             },600)
-             
               setFormFields({
                 name: "",
                 phone: "",
@@ -108,8 +104,8 @@ function SignUpPage() {
             console.log("Signup failed:", errormsg);
             context.setAlertBox({
               error: true,
-              msg: "Signup failed:",
-              snackOpen: true,
+              msg: errorMsg,
+              snackOpen: false,
             });
             let errorMsg = errormsg || "Signup failed. Please try again.";
             console.log(errorMsg)

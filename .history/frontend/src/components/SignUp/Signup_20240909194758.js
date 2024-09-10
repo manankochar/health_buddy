@@ -87,13 +87,8 @@ function SignUpPage() {
                 email:data.user?.email
               })
 
-              localStorage.setItem("user",JSON.stringify(User));
+              localStorage.setItem("user",JSON.stringify(User))
              setIsLoding(false)
-
-             setTimeout(() => {
-              navigate("/")
-             },600)
-             
               setFormFields({
                 name: "",
                 phone: "",

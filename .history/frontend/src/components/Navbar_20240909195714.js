@@ -55,9 +55,9 @@ function Navbar() {
           </nav>
         </div>
         <div className="col-4 d-flex justify-content-end align-items-center px-4">
-          <span style={{textTransform:"capitalize"}}>Hi, {" "}
+          <span>Hi 
           { user && user !== undefined ? user.name : 'User!' }
-        </span>
+        }</span>
           <Profile />
         </div>
       </div>

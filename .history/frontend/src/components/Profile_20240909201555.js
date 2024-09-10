@@ -77,15 +77,9 @@ export default function Profile() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         {
-          user && user!==undefined &&
-          (  <MenuItem onClick={handleClose}>
-            <Avatar /> Dashboard
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Avatar /> My account
-          </MenuItem>
-          <Divider />)
-          
+          user && user!==undefined &&{
+
+          }
         }
         
         <MenuItem onClick={handleClose}>
