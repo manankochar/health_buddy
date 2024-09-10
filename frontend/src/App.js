@@ -25,6 +25,7 @@ import SignUpPage from './components/SignUp/Signup';
 import Routine from './components/blogs/Routine';
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
+import Dashboard from './components/dashboard/Dashboard';
 
 const MyContext = createContext();
 function App() {
@@ -81,7 +82,7 @@ function App() {
     <Route path='/stigma' element={<Stigma/>}/>
 
     <Route path='/signup' element={<SignUpPage/>}/>
-
+    <Route path='/dashboard' element={<Dashboard/>}/>
     <Route path='/Routine' element={<Routine/>}/>
    
 
