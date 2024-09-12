@@ -25,7 +25,11 @@ import SignUpPage from './components/SignUp/Signup';
 import Routine from './components/blogs/Routine';
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
+<<<<<<< HEAD
 import SignInPage from './components/SignIn/SignIn';
+=======
+import Dashboard from './components/dashboard/Dashboard';
+>>>>>>> ef635c963b65add36a8a3799bd323036471d7c22
 
 const MyContext = createContext();
 function App() {
@@ -82,8 +86,12 @@ function App() {
     <Route path='/stigma' element={<Stigma/>}/>
 
     <Route path='/signup' element={<SignUpPage/>}/>
+<<<<<<< HEAD
     <Route path='/signin' element={<SignInPage/>}/>
 
+=======
+    <Route path='/dashboard' element={<Dashboard/>}/>
+>>>>>>> ef635c963b65add36a8a3799bd323036471d7c22
     <Route path='/Routine' element={<Routine/>}/>
    
 
